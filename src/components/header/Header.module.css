@@ -1,0 +1,18 @@
+.header {
+  height: 9vh;
+  background-color: deepskyblue;
+  color: darkorange;
+  font-size: 8vh;
+  text-align: center;
+  border: 3px solid black;
+  font-family: sans-serif;
+  display: flex;
+  font-weight: bolder;
+  text-shadow: 1px 1px 1px black;
+  justify-content: space-around;
+  align-items: center;
+}
+/* .title {
+    /* margin-right: 70vw; *
+    margin-left: 20px; 
+  } */
