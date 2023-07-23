@@ -43,9 +43,6 @@
   },
   "description": "",
   "main": "index.js",
-  "devDependencies": {
-    "gh-pages": "^5.0.0"
-  },
   "author": "bogdanblare",
   "license": "ISC"
 }
