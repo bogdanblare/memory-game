@@ -1,23 +1,9 @@
+/* Base styles for all screen types */
 .card {
   background-color: lightcyan;
   border-radius: 6px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  margin-left: 100px;
-  margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: auto;
-  min-width: 100px;
-  max-width: 150px;
-  min-height: 100px;
-  max-height: 150px;
-  flex: 1;
   cursor: pointer;
-
-  /* width: 180px;
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-top:30px;
-    margin-bottom:30px; */
 }
 
 .label {
@@ -29,11 +15,13 @@
   text-shadow: 1px 1px 1px crimson;
   padding: 5px;
 }
+
 .labelDiv {
   justify-content: center;
   display: flex;
   flex-direction: column;
 }
+
 .image {
   height: 94px;
   border-bottom: 3px solid skyblue;
@@ -41,4 +29,59 @@
   justify-content: center;
   align-items: center;
   padding: 5px;
+}
+
+/* Media queries for different screen types */
+@media only screen and (max-width: 600px) {
+
+  /* Styles for small screens */
+  .card {
+    min-width: 80px;
+    max-width: 120px;
+    min-height: 80px;
+    max-height: 120px;
+    margin: 5px auto;
+  }
+
+  .label {
+    font-size: medium;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+  /* Styles for medium screens */
+  .card {
+    min-width: 120px;
+    max-width: 180px;
+    min-height: 120px;
+    max-height: 180px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .label {
+    font-size: large;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+
+  /* Styles for large screens */
+  .card {
+    min-width: 150px;
+    max-width: 220px;
+    min-height: 150px;
+    max-height: 220px;
+    margin-left: 100px;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: auto;
+  }
+
+  .label {
+    font-size: larger;
+  }
 }

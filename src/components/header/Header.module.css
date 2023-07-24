@@ -1,3 +1,4 @@
+/* Base styles for all screen types */
 .header {
   height: 9vh;
   background-color: deepskyblue;
@@ -12,7 +13,30 @@
   justify-content: space-around;
   align-items: center;
 }
-/* .title {
-    /* margin-right: 70vw; *
-    margin-left: 20px; 
-  } */
+
+/* Media queries for different screen types */
+@media only screen and (max-width: 600px) {
+
+  /* Styles for small screens */
+  .header {
+    font-size: 6vh;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+  /* Styles for medium screens */
+  .header {
+    height: 7vh;
+    font-size: 5vh;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+
+  /* Styles for large screens */
+  .header {
+    height: 9vh;
+    font-size: 8vh;
+  }
+}

@@ -1,3 +1,4 @@
+/* Base styles for all screen types */
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Press+Start+2P&display=swap");
 
 .scoreboard {
@@ -14,9 +15,49 @@
   display: flex;
   flex-direction: column;
 }
+
 .scoreGroup:first-child {
   margin-right: 10px;
 }
+
 .title {
   margin-bottom: 5px;
+}
+
+/* Media queries for different screen types */
+@media only screen and (max-width: 600px) {
+
+  /* Styles for small screens */
+  .scoreboard {
+    font-size: 2vh;
+  }
+
+  .scoreGroup {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .scoreGroup:first-child {
+    margin-right: 0;
+    margin-bottom: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+  /* Styles for medium screens */
+  .scoreboard {
+    font-size: 2.5vh;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+
+  /* Styles for large screens */
+  .scoreboard {
+    font-size: 3vh;
+  }
 }

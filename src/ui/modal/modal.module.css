@@ -1,20 +1,54 @@
+/* Base styles for all screen types */
 .modal {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   background-color: thistle;
   padding: 1rem;
   text-align: center;
-  width: 40vw;
-  height: 20vh;
   z-index: 10;
   position: fixed;
-  top: 20vh;
-  left: calc(50% - 20rem);
   color: midnightblue;
   font-family: "Press Start 2P", cursive;
   font-size: 6vh;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   flex-direction: column;
+}
+
+/* Media queries for different screen types */
+@media only screen and (max-width: 600px) {
+
+  /* Styles for small screens */
+  .modal {
+    width: 80vw;
+    height: 30vh;
+    top: 15vh;
+    left: calc(50% - 40vw);
+    font-size: 5vh;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+  /* Styles for medium screens */
+  .modal {
+    width: 60vw;
+    height: 25vh;
+    top: 15vh;
+    left: calc(50% - 30vw);
+    font-size: 4vh;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+
+  /* Styles for large screens */
+  .modal {
+    width: 40vw;
+    height: 20vh;
+    top: 20vh;
+    left: calc(50% - 20vw);
+    font-size: 6vh;
+  }
 }

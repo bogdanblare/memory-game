@@ -1,3 +1,4 @@
+/* Base styles for all screen types */
 .container {
   height: 92vh;
   display: flex;
@@ -13,4 +14,33 @@
   height: 100vh;
   top: 0;
   left: 0;
+}
+
+/* Media queries for different screen types */
+@media only screen and (max-width: 600px) {
+
+  /* Styles for small screens */
+  .container {
+    height: 90vh;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+  /* Styles for medium screens */
+  .container {
+    height: 85vh;
+  }
+
+  .backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+
+  /* Styles for large screens */
+  .container {
+    height: 92vh;
+  }
 }

@@ -77,7 +77,7 @@ const Layout = () => {
   return (
     <div>
       <div className={classes.container}>
-        <Header title="Memory Match" score={score} hiScore={hiScore} />
+        <Header title="Match" score={score} hiScore={hiScore} />
         <GameBoard cards={cardDeck} clickHandler={handleCardClick} />
       </div>
       {displayModal && <div className={classes.backdrop}></div>}
