@@ -1,8 +1,8 @@
 {
-  "name": "memory-card",
+  "name": "memory-game",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bogdanblare.github.io/memory-card/",
+  "homepage": "https://bogdanblare.github.io/memory-game/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "6.4.0",
     "@fortawesome/free-solid-svg-icons": "6.4.0",
