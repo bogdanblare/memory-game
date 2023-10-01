@@ -1,4 +1,4 @@
-## Run Locally
+# 🔧 Run Locally
 
 Clone the project
 
@@ -24,11 +24,11 @@ Start the server
   npm run start
 ```
 
-## Screenshots
+# 📸 Screenshots
 
 ![App Screenshot](https://raw.githubusercontent.com/bogdanblare/memory-game/master/Screenshot.png)
 
-## Memory game
+# 📱 Memory game
 
 This project is a memory game created . It is a web-based game where the player's objective is to match pairs of cards with the same image. The game starts with a grid of facedown cards, and the player must flip two cards at a time to reveal their images. If the images match, the cards remain face up; otherwise, they are flipped back face down. The player's goal is to match all the pairs of cards within a certain number of moves or within a set time limit.
 
